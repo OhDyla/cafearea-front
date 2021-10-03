@@ -17,16 +17,11 @@
 
 <style lang="scss">
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
-  width: 100vw;
-  height: 60px;
-  background-color: #FAFAFA;
-  border-bottom: 1px solid #EEEEEE;
+  height: 100%;
+  .header__right-wrapper {
+    margin: 0 0 0 auto;
+  }
 }
 </style>
