@@ -1,9 +1,10 @@
 <template>
   <div class="sidemenu">
-    <div>い</div>
-    <div>う</div>
-    <div>え</div>
-    <div>お</div>
+    <el-button type="info" icon="el-icon-message" circle></el-button>
+    <el-button icon="el-icon-search" circle></el-button>
+    <el-button icon="el-icon-search" circle></el-button>
+    <el-button icon="el-icon-search" circle></el-button>
+    <el-button icon="el-icon-search" circle></el-button>
   </div>
 </template>
 
@@ -18,11 +19,7 @@
   left: 0;
   padding: 20px 0;
   height: calc(100vh - 61px);
-  width: 60px;
-  text-align: center;
+  width: 160px;
   background-color: #EEEEEE;
-  div {
-    margin-bottom: 16px;
-  }
 }
 </style>

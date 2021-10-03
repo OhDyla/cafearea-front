@@ -4,9 +4,9 @@
       <div>CafeArea</div>
     </div>
     <div class="header__right-wrapper">
-      <span>検索ボタン</span>
-      <span>マイページ</span>
-      <span>投稿ボタン</span>
+      <el-button>検索</el-button>
+      <el-button>マイページ</el-button>
+      <el-button type="info">投稿</el-button>
     </div>
   </div>
 </template>
@@ -28,9 +28,5 @@
   height: 60px;
   background-color: #FAFAFA;
   border-bottom: 1px solid #EEEEEE;
-  .header__left-wrapper {
-    display: flex;
-    align-items: center;
-  }
 }
 </style>
