@@ -1,6 +1,6 @@
 <template>
     <el-container>
-      <el-header style="background-color: rgb(238, 241, 246)">
+      <el-header style="background-color: #FFFFFF">
         <Header></Header>
       </el-header>
       <el-container>
@@ -32,24 +32,30 @@
               <span>場所から検索</span>
             </el-menu-item>
             <el-menu-item index="6" disabled>
-              <i class="el-icon-document"></i>
-              <span>タグから検索</span>
+              <i class="el-icon-map-location"></i>
+              <span>現在地から検索</span>
             </el-menu-item>
             <el-menu-item index="7" disabled>
               <i class="el-icon-document"></i>
+              <span>タグから検索</span>
+            </el-menu-item>
+            <el-menu-item index="8" disabled>
+              <i class="el-icon-search"></i>
               <span>カスタム検索</span>
             </el-menu-item>
-            <el-menu-item index="8">
+            <el-menu-item index="9">
               <i class="el-icon-setting"></i>
               <span>設定</span>
             </el-menu-item>
           </el-menu>
         </el-aside>
         <el-container>
-          <el-main style="background-color: rgb(200, 200, 255)">
+          <el-main style="background-color: #f7f9f9">
             <router-view />
           </el-main>
-          <el-footer style="background-color: rgb(200, 200, 20)">Footer</el-footer>
+          <el-footer style="background-color: #EEEEEE">
+            <Footer></Footer>
+          </el-footer>
         </el-container>
       </el-container>
     </el-container>
@@ -58,11 +64,13 @@
 <script lang="ts">
   import Header from './components/general/Header.vue'
   import Sidemenu from './components/general/Sidemenu.vue'
+  import Footer from './components/general/Footer.vue'
   export default {
     name: 'App',
     components: {
       Header,
       Sidemenu,
+      Footer,
     }
   }
 </script>

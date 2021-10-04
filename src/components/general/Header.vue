@@ -4,7 +4,7 @@
       <div>CafeArea</div>
     </div>
     <div class="header__right-wrapper">
-      <el-button>検索</el-button>
+      <el-button icon="el-icon-search" circle></el-button>
       <el-button>マイページ</el-button>
       <el-button type="info">投稿</el-button>
     </div>
