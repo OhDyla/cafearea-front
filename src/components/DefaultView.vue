@@ -6,7 +6,7 @@
       <el-container>
         <Sidemenu></Sidemenu>
         <el-container>
-          <el-main style="background-color: #f7f9f9">
+          <el-main style="background-color: #FFFFFF">
             <router-view />
           </el-main>
           <el-footer style="background-color: #EEEEEE">

@@ -6,14 +6,40 @@
       </div>
       <div class="home__search-wrapper">
         <div class="home__search-wrapper-left">
-          <div class="home__search-card">場所から<br>探す</div>
-          <div class="home__search-card">名前から<br>探す</div>
+          <div class="home__search-card">
+            <div class="home__search-card-icon">
+              <fa class="awsome" icon="map-marker-alt" />
+            </div>
+            <div class="home__search-card-name">
+              場所から探す
+            </div>
+          </div>
+          <div class="home__search-card">
+            <div class="home__search-card-icon">
+              <fa class="awsome" icon="font" />
+            </div>
+            <div class="home__search-card-name">
+              名前から探す
+            </div>
+          </div>
         </div>
         <div class="home__search-wrapper-right">
-          <div class="home__search-r-card">>&nbsp;&nbsp;チェーン店を探す</div>
-          <div class="home__search-r-card">>&nbsp;&nbsp;作業場所を探す</div>
-          <div class="home__search-r-card">>&nbsp;&nbsp;タグから探す</div>
-          <div class="home__search-r-card is-pick">詳細検索</div>
+          <div class="home__search-r-card">
+            <div><fa class="awsome" icon="store-alt" /></div>
+            チェーン店を探す
+          </div>
+          <div class="home__search-r-card">
+            <div><fa class="awsome" icon="laptop" /></div>
+            作業場所を探す
+          </div>
+          <div class="home__search-r-card">
+            <div><fa class="awsome" icon="tags" /></div>
+            タグから探す
+          </div>
+          <div class="home__search-r-card is-pick">
+            <div><fa class="awsome" icon="search" /></div>
+            詳細検索
+          </div>
         </div>
       </div>
     </div>
@@ -82,31 +108,61 @@ export default {
       display: flex;
       width: 100%;
       .home__search-wrapper-left {
-        flex: 0 0 40%;
+        flex: 0 0 50%;
         .home__search-card {
           box-sizing: border-box;
-          margin-bottom: 8px;
-          padding: 12px 0;
+          display: flex;
+          margin-bottom: 16px;
+          padding: 20px;
           width: 100%;
-          text-align: center;
-          font-weight: bold;
-          color: #FFFFFF;
-          background-color: #800000;
-          border: 4px solid #BBBBBB;
-          border-radius: 8px;
+          height: 112px;
+          background-color: #F3F3F3;
+          border-radius: 20px;
+          .home__search-card-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 12px;
+            width: 60px;
+            height: 60px;
+            background-color:#DEB887;
+            border-radius: 16px;
+            .awsome {
+              font-size: 36px;
+              color: #FFFFFF;
+            }
+          }
+          .home__search-card-name {
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+          }
         }
       }
       .home__search-wrapper-right {
-        flex: 1 1 60%;
-        padding-left: 20px;
+        flex: 1 1 50%;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 28px;
         .home__search-r-card {
-          margin-bottom: 12px;
-          padding-left: 20px;
-          width: 60%;
-
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 0 12px 12px 0;
+          width: 112px;
+          height: 112px;
+          font-size: 12px;
+          background-color: #F3F3F3;
+          border-radius: 20px;
+          .awsome {
+            margin-bottom: 16px;
+            font-size: 32px;
+          }
           &.is-pick {
-            border: 1px solid #666666;
-            border-radius: 4px;
+            font-weight: bold;
+            background-color: #DEB887;
+            color: #FFFFFF;
           }
         }
       }
@@ -124,7 +180,7 @@ export default {
         padding: 20px;
         width: 22%;
         background-color: rgba(245, 222, 179, 0.6);
-        border-radius: 8px;
+        border-radius: 20px;
         .home__trend-card-img {
           margin-bottom: 8px;
           width:100%;
