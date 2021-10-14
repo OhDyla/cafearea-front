@@ -4,6 +4,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 import Home from './components/Home.vue';
 import HelloWorld from './components/HelloWorld.vue';
+import Default from './components/Default.vue';
+
 
 // import Login from './components/Login.vue';
 // import Logout from './components/Logout.vue';
